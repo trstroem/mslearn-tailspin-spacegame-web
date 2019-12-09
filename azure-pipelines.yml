@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 variables:
   buildConfiguration: 'Release'
 
@@ -37,10 +36,6 @@ stages:
 
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
-=======
-trigger:
-- '*'
->>>>>>> 17454ef937368270dde137e130791ae036bde2c3
 
 pool:
   vmImage: 'ubuntu-16.04'
