@@ -4,6 +4,13 @@ variables:
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
+  trigger:
+  branches:
+    include:
+    - '*'     # build all branches
+  paths:
+    exclude:
+    - docs/*  # exclude the docs folder
   jobs: 
   - job: 'Build'
     displayName: 'Build job'
